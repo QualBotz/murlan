@@ -41,15 +41,49 @@
       padding: 12px 14px;
       border-radius: 6px;
     }
+    .languages {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 18px;
+      margin: 0 0 8px;
+      padding: 10px 14px;
+      background: #0b4a2c;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+    .languages a {
+      color: #f7f3e8;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .languages a:hover, .languages a:focus {
+      text-decoration: underline;
+    }
+    section + section {
+      margin-top: 48px;
+      padding-top: 8px;
+      border-top: 2px solid #d9cba3;
+    }
+    .top {
+      margin-top: 24px;
+      font-size: 14px;
+    }
   </style>
 </head>
 <body>
 <main>
+  <nav id="languages" class="languages" aria-label="Lingua / Language / Gjuha">
+    <a href="#it" hreflang="it" lang="it">Italiano</a>
+    <a href="#en" hreflang="en" lang="en">English</a>
+    <a href="#sq" hreflang="sq" lang="sq">Shqip</a>
+  </nav>
+
+  <section id="it" lang="it">
   <h1>Privacy Policy</h1>
   <p class="note">
     App: Murlan<br>
     Sviluppatore: QualBotz<br>
-    Ultimo aggiornamento: 10 ottobre 2026
+    Ultimo aggiornamento: 11 ottobre 2026
   </p>
   <p>
     Questa Privacy Policy spiega quali dati possono essere trattati quando usi Murlan,
@@ -62,23 +96,25 @@
     email, numero di telefono, indirizzo o altri dati identificativi.
   </p>
   <p>
-    Il gioco salva solo sul dispositivo le impostazioni (audio, vibrazione, ritmo di gioco e dorso delle
-    carte), le statistiche delle partite, i traguardi sbloccati e la partita in corso. Questi dati
-    servono solo a far funzionare il gioco e a riprendere la partita dove l'avevi lasciata.
-    Non vengono inviati a noi.
+    Il gioco salva solo sul dispositivo le impostazioni (musica ed effetti sonori con i loro volumi,
+    vibrazione, animazioni rapide, tocco intelligente, lingua, mazzo e dorso delle carte), le statistiche delle
+    partite, i traguardi sbloccati e la partita in corso. Questi dati servono solo a far funzionare il
+    gioco e a riprendere la partita dove l'avevi lasciata. Non vengono inviati a noi.
   </p>
 
   <h2>2. Pubblicità e servizi di terze parti</h2>
   <p>
     Il gioco usa Google AdMob e il Google Mobile Ads SDK per mostrare annunci pubblicitari:
-    annunci a schermo intero (interstitial) all'apertura dell'app e alla fine delle partite, e
+    un annuncio all'apertura dell'app (App Open), annunci a schermo intero (interstitial) alla fine delle partite, e
     video con premio facoltativi che danno suggerimenti in più. Questi servizi possono raccogliere
     e condividere dati necessari per pubblicità, analisi, prevenzione frodi e sicurezza.
   </p>
   <p>
     In base alla documentazione di Google Mobile Ads SDK, tali dati possono includere indirizzo IP,
     interazioni con il prodotto, informazioni diagnostiche e identificatori del dispositivo o
-    dell'account, come l'ID pubblicitario Android quando disponibile.
+    dell'account, come l'ID pubblicitario Android quando disponibile. Dall'indirizzo IP si può
+    ricavare una posizione approssimativa (paese o città), usata per gli annunci e per prevenire le
+    frodi. Il gioco non chiede la posizione precisa del dispositivo.
   </p>
   <p>
     Per ulteriori informazioni consulta la
@@ -91,8 +127,10 @@
     Dove richiesto dalla normativa applicabile (ad esempio nell'Unione Europea e nel Regno Unito),
     il gioco mostra un messaggio di consenso relativo agli annunci tramite Google User Messaging
     Platform. Puoi modificare le tue scelte in qualsiasi momento da Impostazioni &gt;
-    Privacy e pubblicità &gt; Gestisci il consenso. Se non dai il consenso, gli annunci non vengono
-    richiesti e il gioco funziona lo stesso.
+    Privacy e pubblicità &gt; Gestisci il consenso. Se non dai il consenso, Google può comunque
+    mostrare annunci limitati o non personalizzati. Per mostrarli, misurarli e prevenire le frodi può
+    trattare alcuni dati, come l'indirizzo IP e le informazioni diagnostiche. Il gioco funziona in
+    ogni caso.
   </p>
 
   <h2>4. Come usiamo i dati</h2>
@@ -122,31 +160,345 @@
     dove disponibile.
   </p>
 
-  <h2>7. Minori</h2>
+  <h2>7. Titolare, basi giuridiche e diritti</h2>
   <p>
-    Murlan non chiede consapevolmente dati personali a minori. Se ritieni che siano
-    stati trattati dati di un minore in modo non appropriato, contattaci così potremo valutare
-    la richiesta.
+    Il titolare del trattamento per Murlan è lo sviluppatore QualBotz, che puoi contattare
+    all'indirizzo <a href="mailto:qualbotzinfo@gmail.com">qualbotzinfo@gmail.com</a>. Per i dati
+    raccolti dal Google Mobile Ads SDK, Google agisce come titolare autonomo secondo la propria
+    Privacy Policy.
+  </p>
+  <p>Le basi giuridiche sono:</p>
+  <ul>
+    <li>il consenso, dove richiesto, per gli annunci personalizzati e per l'uso di identificatori
+      sul dispositivo: puoi revocarlo in qualsiasi momento da Impostazioni &gt; Privacy e pubblicità
+      &gt; Gestisci il consenso;</li>
+    <li>il legittimo interesse, per mostrare annunci non personalizzati o limitati, misurarli e
+      prevenire frodi, abusi e problemi di sicurezza.</li>
+  </ul>
+  <p>
+    Puoi chiedere l'accesso ai tuoi dati, la rettifica, la cancellazione, la limitazione del
+    trattamento e la portabilità, e puoi opporti al trattamento. QualBotz non conserva dati su
+    propri server: per i dati pubblicitari puoi usare anche gli strumenti privacy di Google e
+    reimpostare o eliminare l'ID pubblicitario dalle impostazioni Android. Per qualsiasi richiesta
+    scrivi a <a href="mailto:qualbotzinfo@gmail.com">qualbotzinfo@gmail.com</a>. Hai anche il diritto
+    di presentare reclamo al Garante per la protezione dei dati personali
+    (<a href="https://www.garanteprivacy.it">www.garanteprivacy.it</a>) o all'autorità di controllo del
+    paese in cui vivi.
   </p>
 
-  <h2>8. Sicurezza</h2>
+  <h2>8. Minori</h2>
+  <p>
+    Murlan è destinato a utenti dai 16 anni in su e non chiede consapevolmente dati personali a
+    minori. Se ritieni che siano stati trattati dati di un minore in modo non appropriato,
+    contattaci così potremo valutare la richiesta.
+  </p>
+
+  <h2>9. Sicurezza</h2>
   <p>
     I dati del gioco sono salvati localmente sul dispositivo. I dati gestiti dal Google Mobile Ads
     SDK sono trasmessi secondo le misure di sicurezza indicate da Google, inclusa la cifratura in
     transito.
   </p>
 
-  <h2>9. Modifiche a questa policy</h2>
+  <h2>10. Modifiche a questa policy</h2>
   <p>
     Potremo aggiornare questa Privacy Policy quando cambiano il gioco, i servizi pubblicitari o
     i requisiti legali. La versione aggiornata sarà pubblicata su questa pagina.
   </p>
 
-  <h2>10. Contatti</h2>
+  <h2>11. Contatti</h2>
   <p>
     Per richieste privacy, contatta lo sviluppatore:
     <a href="mailto:qualbotzinfo@gmail.com">qualbotzinfo@gmail.com</a>
   </p>
+  <p class="top"><a href="#languages">Torna alle lingue</a></p>
+  </section>
+
+  <section id="en" lang="en">
+  <h1>Privacy Policy</h1>
+  <p class="note">
+    App: Murlan<br>
+    Developer: QualBotz<br>
+    Last updated: October 11, 2026
+  </p>
+  <p>
+    This Privacy Policy explains what data may be processed when you use Murlan,
+    especially in connection with ads and rewarded videos.
+  </p>
+
+  <h2>1. Data we collect directly</h2>
+  <p>
+    Murlan does not require you to create an account and does not directly ask for your name,
+    email, phone number, address or any other identifying data.
+  </p>
+  <p>
+    The game saves only on your device its settings (music and sound effects with their volumes,
+    vibration, fast animations, smart tap, language, card deck and card back), match statistics,
+    unlocked achievements and the match in progress. This data is used only to make the game work
+    and to resume the match where you left it. It is not sent to us.
+  </p>
+
+  <h2>2. Advertising and third-party services</h2>
+  <p>
+    The game uses Google AdMob and the Google Mobile Ads SDK to show ads: an ad when the app
+    opens (App Open), full-screen ads (interstitial) at the end of matches, and optional rewarded
+    videos that give extra hints. These services may collect and share data needed for advertising,
+    analytics, fraud prevention and security.
+  </p>
+  <p>
+    According to the Google Mobile Ads SDK documentation, this data may include the IP address,
+    product interactions, diagnostic information and device or account identifiers, such as the
+    Android advertising ID when available. An approximate location (country or city) can be
+    derived from the IP address and is used for ads and fraud prevention. The game does not ask
+    for the precise location of the device.
+  </p>
+  <p>
+    For more information, see
+    <a href="https://policies.google.com/privacy">Google's Privacy Policy</a> and
+    <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">Google AdMob's information for Data safety</a>.
+  </p>
+
+  <h2>3. Consent for ads and privacy</h2>
+  <p>
+    Where required by applicable law (for example in the European Union and the United Kingdom),
+    the game shows a consent message about ads through the Google User Messaging Platform. You can
+    change your choices at any time in Settings &gt; Privacy and ads &gt; Manage consent. If you do
+    not give consent, Google may still show limited or non-personalized ads. To show and measure
+    them and to prevent fraud, it may process some data, such as the IP address and diagnostic
+    information. The game works in any case.
+  </p>
+
+  <h2>4. How we use data</h2>
+  <p>Data is used to:</p>
+  <ul>
+    <li>make the game work and save settings, statistics and the match on the device;</li>
+    <li>show ads and rewarded videos;</li>
+    <li>prevent fraud, abuse and technical problems related to ads;</li>
+    <li>improve stability and performance through the integrated advertising services.</li>
+  </ul>
+
+  <h2>5. Data sharing</h2>
+  <p>
+    We do not sell personal data. Ad-related data may be processed by Google and its partners
+    under their own policies, to deliver and measure ads and to prevent fraud or abuse.
+  </p>
+
+  <h2>6. Retention and deletion</h2>
+  <p>
+    Data saved on the device stays there while the app is installed, or until you delete it from
+    the Android settings (Storage &gt; Clear data) or by uninstalling the app.
+  </p>
+  <p>
+    For data processed by the advertising services, see Google's policies and privacy tools. You
+    can also reset or delete the advertising ID from the Android settings, where available.
+  </p>
+
+  <h2>7. Controller, legal bases and rights</h2>
+  <p>
+    The data controller for Murlan is the developer QualBotz, who can be contacted at
+    <a href="mailto:qualbotzinfo@gmail.com">qualbotzinfo@gmail.com</a>. For data collected by the
+    Google Mobile Ads SDK, Google acts as an independent controller under its own Privacy Policy.
+  </p>
+  <p>The legal bases are:</p>
+  <ul>
+    <li>consent, where required, for personalized ads and for the use of identifiers on the
+      device: you can withdraw it at any time in Settings &gt; Privacy and ads &gt; Manage consent;</li>
+    <li>legitimate interest, to show non-personalized or limited ads, measure them and prevent
+      fraud, abuse and security problems.</li>
+  </ul>
+  <p>
+    You can request access to your data, rectification, erasure, restriction of processing and
+    portability, and you can object to processing. QualBotz does not keep data on its own servers:
+    for advertising data you can also use Google's privacy tools and reset or delete the
+    advertising ID from the Android settings. For any request, write to
+    <a href="mailto:qualbotzinfo@gmail.com">qualbotzinfo@gmail.com</a>. You also have the right to
+    lodge a complaint with the Italian Data Protection Authority (Garante per la protezione dei dati
+    personali, <a href="https://www.garanteprivacy.it">www.garanteprivacy.it</a>) or with the
+    supervisory authority of the country where you live.
+  </p>
+
+  <h2>8. Minors</h2>
+  <p>
+    Murlan is intended for users aged 16 and over and does not knowingly ask minors for personal
+    data. If you believe that a minor's data has been processed inappropriately, contact us so that
+    we can assess the request.
+  </p>
+
+  <h2>9. Security</h2>
+  <p>
+    Game data is saved locally on the device. Data handled by the Google Mobile Ads SDK is
+    transmitted according to the security measures stated by Google, including encryption in
+    transit.
+  </p>
+
+  <h2>10. Changes to this policy</h2>
+  <p>
+    We may update this Privacy Policy when the game, the advertising services or legal requirements
+    change. The updated version will be published on this page.
+  </p>
+
+  <h2>11. Contact</h2>
+  <p>
+    For privacy requests, contact the developer:
+    <a href="mailto:qualbotzinfo@gmail.com">qualbotzinfo@gmail.com</a>
+  </p>
+  <p class="top"><a href="#languages">Back to languages</a></p>
+  </section>
+
+  <section id="sq" lang="sq">
+  <h1>Politika e privatësisë</h1>
+  <p class="note">
+    Aplikacioni: Murlan<br>
+    Zhvilluesi: QualBotz<br>
+    Përditësimi i fundit: 11 tetor 2026
+  </p>
+  <p>
+    Kjo politikë privatësie shpjegon cilat të dhëna mund të përpunohen kur përdor Murlan,
+    sidomos në lidhje me reklamat dhe videot me shpërblim.
+  </p>
+
+  <h2>1. Të dhënat që mbledhim drejtpërdrejt</h2>
+  <p>
+    Murlan nuk kërkon krijimin e një llogarie dhe nuk të kërkon drejtpërdrejt emrin, email-in,
+    numrin e telefonit, adresën ose të dhëna të tjera identifikuese.
+  </p>
+  <p>
+    Loja ruan vetëm në pajisje cilësimet (muzikën dhe efektet zanore me volumet e tyre, dridhjen,
+    animacionet e shpejta, prekjen e zgjuar, gjuhën, pakon dhe anën e pasme të letrave), statistikat
+    e lojërave, arritjet e zhbllokuara dhe lojën në vazhdim. Këto të dhëna shërbejnë vetëm që loja të
+    funksionojë dhe që ta vazhdosh lojën aty ku e le. Nuk na dërgohen neve.
+  </p>
+
+  <h2>2. Reklamat dhe shërbimet e palëve të treta</h2>
+  <p>
+    Loja përdor Google AdMob dhe Google Mobile Ads SDK për të shfaqur reklama: një reklamë kur
+    hapet aplikacioni (App Open), reklama në ekran të plotë (interstitial) në fund të lojërave dhe
+    video opsionale me shpërblim që japin këshilla shtesë. Këto shërbime mund të mbledhin dhe të
+    ndajnë të dhëna të nevojshme për reklamat, analizat, parandalimin e mashtrimeve dhe sigurinë.
+  </p>
+  <p>
+    Sipas dokumentacionit të Google Mobile Ads SDK, këto të dhëna mund të përfshijnë adresën IP,
+    ndërveprimet me produktin, informacione diagnostikuese dhe identifikues të pajisjes ose të
+    llogarisë, si ID-ja e reklamave e Android-it kur është e disponueshme. Nga adresa IP mund të
+    nxirret një vendndodhje e përafërt (shteti ose qyteti), që përdoret për reklamat dhe për
+    parandalimin e mashtrimeve. Loja nuk e kërkon vendndodhjen e saktë të pajisjes.
+  </p>
+  <p>
+    Për më shumë informacion, shiko
+    <a href="https://policies.google.com/privacy">Politikën e privatësisë së Google</a> dhe
+    <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">informacionet e Google AdMob për Sigurinë e të dhënave (Data safety)</a>.
+  </p>
+
+  <h2>3. Pëlqimi për reklamat dhe privatësinë</h2>
+  <p>
+    Kur e kërkon ligji në fuqi (për shembull në Bashkimin Evropian dhe në Mbretërinë e Bashkuar),
+    loja shfaq një mesazh pëlqimi për reklamat nëpërmjet Google User Messaging Platform. Mund t'i
+    ndryshosh zgjedhjet në çdo kohë te Cilësimet &gt; Privatësia dhe reklamat &gt; Menaxho pëlqimin.
+    Nëse nuk jep pëlqimin, Google mund të shfaqë gjithsesi reklama të kufizuara ose jo të
+    personalizuara. Për t'i shfaqur, për t'i matur dhe për të parandaluar mashtrimet, mund të
+    përpunojë disa të dhëna, si adresa IP dhe informacionet diagnostikuese. Loja funksionon në çdo
+    rast.
+  </p>
+
+  <h2>4. Si i përdorim të dhënat</h2>
+  <p>Të dhënat përdoren për:</p>
+  <ul>
+    <li>funksionimin e lojës dhe ruajtjen në pajisje të cilësimeve, të statistikave dhe të lojës;</li>
+    <li>shfaqjen e reklamave dhe të videove me shpërblim;</li>
+    <li>parandalimin e mashtrimeve, të abuzimeve dhe të problemeve teknike që lidhen me reklamat;</li>
+    <li>përmirësimin e qëndrueshmërisë dhe të performancës nëpërmjet shërbimeve të integruara të
+      reklamave.</li>
+  </ul>
+
+  <h2>5. Ndarja e të dhënave</h2>
+  <p>
+    Ne nuk shesim të dhëna personale. Të dhënat që lidhen me reklamat mund të përpunohen nga
+    Google dhe partnerët e tij sipas politikave të tyre, për të ofruar dhe për të matur reklamat dhe
+    për të parandaluar mashtrimet ose abuzimet.
+  </p>
+
+  <h2>6. Ruajtja dhe fshirja</h2>
+  <p>
+    Të dhënat e ruajtura në pajisje mbeten aty për sa kohë që aplikacioni është i instaluar, ose
+    derisa t'i fshish nga cilësimet e Android-it (Hapësira ruajtëse &gt; Pastro të dhënat) ose duke
+    çinstaluar aplikacionin.
+  </p>
+  <p>
+    Për të dhënat e përpunuara nga shërbimet e reklamave, shiko politikat dhe mjetet e privatësisë
+    së Google. Mund ta rivendosësh ose ta fshish ID-në e reklamave nga cilësimet e Android-it, kur
+    është e mundur.
+  </p>
+
+  <h2>7. Kontrolluesi, bazat ligjore dhe të drejtat</h2>
+  <p>
+    Kontrolluesi i të dhënave për Murlan është zhvilluesi QualBotz, që mund ta kontaktosh në
+    adresën <a href="mailto:qualbotzinfo@gmail.com">qualbotzinfo@gmail.com</a>. Për të dhënat e
+    mbledhura nga Google Mobile Ads SDK, Google vepron si kontrollues i pavarur sipas Politikës së
+    vet të privatësisë.
+  </p>
+  <p>Bazat ligjore janë:</p>
+  <ul>
+    <li>pëlqimi, kur kërkohet, për reklamat e personalizuara dhe për përdorimin e identifikuesve në
+      pajisje: mund ta tërheqësh në çdo kohë te Cilësimet &gt; Privatësia dhe reklamat &gt; Menaxho
+      pëlqimin;</li>
+    <li>interesi i ligjshëm, për të shfaqur reklama jo të personalizuara ose të kufizuara, për t'i
+      matur dhe për të parandaluar mashtrimet, abuzimet dhe problemet e sigurisë.</li>
+  </ul>
+  <p>
+    Mund të kërkosh qasje në të dhënat e tua, korrigjimin, fshirjen, kufizimin e përpunimit dhe
+    transferueshmërinë e tyre, dhe mund të kundërshtosh përpunimin. QualBotz nuk ruan të dhëna në
+    serverët e vet: për të dhënat e reklamave mund të përdorësh edhe mjetet e privatësisë së Google
+    dhe ta rivendosësh ose ta fshish ID-në e reklamave nga cilësimet e Android-it. Për çdo kërkesë,
+    shkruaj në <a href="mailto:qualbotzinfo@gmail.com">qualbotzinfo@gmail.com</a>. Ke gjithashtu të
+    drejtë të paraqesësh ankesë te Autoriteti italian për mbrojtjen e të dhënave personale (Garante
+    per la protezione dei dati personali, <a href="https://www.garanteprivacy.it">www.garanteprivacy.it</a>)
+    ose tek autoriteti mbikëqyrës i vendit ku jeton.
+  </p>
+
+  <h2>8. Të miturit</h2>
+  <p>
+    Murlan është i destinuar për përdorues nga 16 vjeç e lart dhe nuk u kërkon me vetëdije të
+    dhëna personale të miturve. Nëse mendon se janë përpunuar në mënyrë të papërshtatshme të dhëna
+    të një të mituri, na kontakto që ta shqyrtojmë kërkesën.
+  </p>
+
+  <h2>9. Siguria</h2>
+  <p>
+    Të dhënat e lojës ruhen lokalisht në pajisje. Të dhënat që trajton Google Mobile Ads SDK
+    transmetohen sipas masave të sigurisë të përcaktuara nga Google, përfshirë enkriptimin gjatë
+    transmetimit.
+  </p>
+
+  <h2>10. Ndryshimet e kësaj politike</h2>
+  <p>
+    Mund ta përditësojmë këtë politikë privatësie kur ndryshojnë loja, shërbimet e reklamave ose
+    kërkesat ligjore. Versioni i përditësuar do të publikohet në këtë faqe.
+  </p>
+
+  <h2>11. Kontakti</h2>
+  <p>
+    Për kërkesa që lidhen me privatësinë, kontakto zhvilluesin:
+    <a href="mailto:qualbotzinfo@gmail.com">qualbotzinfo@gmail.com</a>
+  </p>
+  <p class="top"><a href="#languages">Kthehu te gjuhët</a></p>
+  </section>
 </main>
+<script>
+  // Senza un'ancora nell'indirizzo (#it, #en, #sq) la pagina va alla lingua del browser, come
+  // l'impostazione "Automatica" del gioco: italiano e albanese, tutte le altre lingue in inglese.
+  (function () {
+    if (location.hash) {
+      return;
+    }
+    var language = (navigator.language || "it").toLowerCase().slice(0, 2);
+    if (language === "it") {
+      return;
+    }
+    var target = document.getElementById(language === "sq" ? "sq" : "en");
+    if (target) {
+      target.scrollIntoView();
+    }
+  })();
+</script>
 </body>
 </html>
